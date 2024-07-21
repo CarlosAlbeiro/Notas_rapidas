@@ -28,6 +28,7 @@ app.use((req, res, next) => {
 
 app.post("/crearNota", async (req, res) => {
   const {nota} = req.body;
+   console.log("Nota en api->"+nota);
   // Inserción de un nuevo registro
   try {
     // Realiza la inserción en la base de datos
